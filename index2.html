@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="icon" href="images/paper.png">
+
+  <title>Let's Play</title>
+</head>
+<body> 
+  <div id="Reset" class="rev" onclick="reset();"><p>Reset Score</p></div>
+  <div class="rev"><p>Reveal Score</p></div>
+  <div class="Score">wins : <p id="wins"></p> <br>
+      loses: <p id="loses"></p> <br>
+      ties : <p id="ties"></p>
+  </div>
+  <img class="computer" src="computer2.png" alt="">
+  <h1>LET'S PLAY!!!!</h1>
+  <h3>Pick an OPTION :</h3>
+  <div class="tsawer">
+    <img onclick="rock();" class="rock" style="margin-top: 20px;" src="rock.png">
+    <img onclick="paper();" class="rock" src="paper.png">
+    <img onclick="sis();" class="rock" src="sis.png">
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

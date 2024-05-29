@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* .roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+} */
+
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  justify-content: center;
+  background-color: rgb(162, 104, 220);
+}
+.computer{
+  width: 20%;
+}
+h3{
+  margin-top: 100px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  margin-bottom: 50px;
+}
+.tsawer{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+h1{
+  margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+.rock{
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.rock:hover{
+  transform: scale(1.1);
+}
+.rev{
+  background-color: white;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+.rev p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rebeccapurple;
+
+}
+.rev:hover{
+  transform: scale(1.1);
+}
+.Score{
+  position: absolute;
+  right: 50px;
+  top: 150px;
+  background-color: rgb(255, 255, 255);
+  width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  color: rgb(121, 58, 185);
+  height: 150px;
+  display: none; 
+
+}
+.rev:hover + .Score {
+  display: block; 
+}
+#wins, #loses, #ties{
+  display: inline-block;
+}
+#Reset{
+  left: 50px;
+}
+@media(max-width :470px){
+  body{
+    gap: 50px;
+
+  }
+  .computer{
+    width: 50%;
+    margin-top: 50px;
+  } 
+  .rock{
+    width: 60px;
+   
+  }
+  h3{
+    font-size: 2.3rem;
+  }
+  .rev{
+
+    top:20px;
+    right: 20px;
+
+  
+  }
+  .Score{
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    background-color: rgb(255, 255, 255);
+    width: 90px;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(121, 58, 185);
+    height: 150px;
+    display: none; 
+  
+  }
+  #Reset{
+    left: 20px;
+    width: 100px;
+  }
+
+}
